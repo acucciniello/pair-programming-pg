@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/server.js",
-    "test": "standard && mocha test/test.js && cd react-client && yarn test"
+    "test": "standard && mocha test/test.js && cd react-client && yarn test",
+    "test-ci": "standard && mocha test/test.js && cd react-client && yarn install && yarn test"
   },
   "dependencies": {
     "express": "^4.15.3",
