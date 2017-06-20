@@ -1,0 +1,30 @@
+{
+  "name": "pair-programming-pg",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/acucciniello/pair-programming-pg.git",
+  "author": "Antonio Cuccinielello <antonio.cucciniello16@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "standard && mocha test/test.js && cd react-client && yarn test"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "got": "^7.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "/react-client/"
+    ]
+  }
+}
